@@ -1,0 +1,11 @@
+<h1>Make new article</h1>
+
+<%= form_with model: @article do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <br>
+  <%= form.label :body %>
+  <%= form.text_area :body %>
+  <br>
+  <%= form.submit %>
+<% end%>
